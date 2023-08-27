@@ -142,6 +142,7 @@ export default function Checkout() {
     event.target.setAttribute('data-mpscurrency', mpscurrency);
     event.target.setAttribute('data-mpsvcode', mpsvcode);
   }
+  console.log(process.env.ENVIRONMENT, process.env.MERCHANTID, process.env.VERIFY_KEY)
   return (
     <div className="bg-gray-50">
       <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript" />
